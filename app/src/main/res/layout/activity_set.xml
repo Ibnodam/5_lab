@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/red"
+        android:layout_marginHorizontal="8dp"/>
+    <EditText
+        android:id="@+id/redInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/green"
+        android:layout_marginHorizontal="8dp"/>
+
+    <EditText
+        android:id="@+id/greenInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blue"
+        android:layout_marginHorizontal="8dp"/>
+
+    <EditText
+        android:id="@+id/blueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_margin="8dp"/>
+
+    <CheckBox
+        android:layout_marginHorizontal="8dp"
+        android:id="@+id/left_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"/>
+
+    <CheckBox
+        android:layout_marginHorizontal="8dp"
+        android:id="@+id/right_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

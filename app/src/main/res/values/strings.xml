@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">5_lab</string>
+    <string name="choose_btn">Input color</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="input_color">Input color</string>
+    <string name="change">Change</string>
+    <string name="exit">Exit</string>
+    <string name="help">Help</string>
+    <string name="changes">Change</string>
+    <string name="ok">Ok</string>
+</resources>
