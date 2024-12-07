@@ -26,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+         binding.btnHelp.setOnClickListener{
+            showHelpDialog()
+        }
         binding.btnExit.setOnClickListener{
             finishAffinity()
         }
@@ -55,5 +58,17 @@ class MainActivity : AppCompatActivity() {
         if(left_checked) binding.left.setBackgroundColor(Color.rgb(red, green, blue))
         if(right_checked) binding.right.setBackgroundColor(Color.rgb(red, green, blue))
         }
+    }
+
+    
+    private fun showHelpDialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Manual for this APP")
+        builder.setMessage("1. Input color - set RGB color. \n" +
+                "2. Change - confirm new RGB changes. \n" +
+                "3. Exit - close APP. \n" +
+                "4. Help - manual for this APP. \n")
+        builder.setPositiveButton("ОК") { dialog, _ -> dialog.dismiss() }
+        builder.show()
     }
 }
